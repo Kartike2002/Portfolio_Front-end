@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --main-bg: rgb(4, 4, 69);
+    --main-text: #fff;
+    --accent: #c30bdc;
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--main-text);
+}
+
+a {
+    color: var(--accent);
+}
+
+/* Theme classes */
+.theme-purple {
+    --main-bg: rgb(4, 4, 69);
+    --main-text: #fff;
+    --accent: #c30bdc;
+}
+.theme-blue {
+    --main-bg: #001f3f;
+    --main-text: #fff;
+    --accent: #0077ff;
+}
+.theme-green {
+    --main-bg: #0b3d2e;
+    --main-text: #fff;
+    --accent: #1abc9c;
+}
+
+
+.color-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Show scrollbar only when needed */
+.contact-container,
+.About .container {
+    overflow: auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(4, 4, 69);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(34, 16, 232);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul li a:hover {
+    color: rgba(141, 11, 217, 0.93);
+    font-size: 1.04rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+
+.leftSection {
+    width: 35px;
+}
+
+.firstSection>div {
+    width: 30%;
+
+}
+
+.leftSection {
+    margin: 30px;
+    font-size: 3rem;
+}
+
+.rightSection img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px rgba(7, 182, 245, 0.613);
+    object-fit: cover;
+
+}
+
+.purple {
+    color: rgb(243, 4, 199);
+}
+
+#element {
+    color: rgb(208, 11, 225);
+}
+
+.footer {
+    background-color: #242125;
+    height: 200px;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+}
+
+
+
+
+/* Start About Page CSS  */
+
+.About {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%; /* Optional: makes it vertically centered on the page */
+}
+
+.About .container {
+    width: 80%;
+    min-height: 380px;
+    max-width: 700px;
+    margin-top: 1rem;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
+    background-color: rgb(8, 14, 176);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #c30bdc;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+
+/* About CSS end */
+
+
+
+/* Service css start */
+
+.service {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.service.container {
+    margin-top: 2rem;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.service {
+    border: 2px solid blueviolet;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(176, 8, 218, 0.43);
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+.service p {
+    margin-bottom: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
+/* Service CSS end */
+
+
+
+/* Project CSS start */
+
+
+
+.Project.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project {
+    border: 2px solid blueviolet;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(98, 37, 91, 0.2);
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    margin-bottom: 15px;
+}
+
+.project a {
+
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
+
+/* Project CSS end */
+
+
+
+
+
+
+
+.contact {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.contact-container {
+    background-color: #0d0aa2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    background-color: #c11229;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-group button:hover {
+    background-color: #03b653;
+}
+
+.Home {
+    background-color: #c11229;
+
+
+
+}
+
+/* Contact CSS start */
+
+/* Contact Section Styles */
+.contact-container {
+    background: #0f1ba2;
+    max-width: 400px;
+    height: 600px;
+    margin: 40px auto 60px auto;
+    padding: 40px 30px 30px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(44, 10, 100, 0.15);
+}
+
+.contact-container h1 {
+    color: #c30bdc;
+    text-align: center;
+    /* margin-bottom: 15px; */
+    font-size: 2rem;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-container label {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    padding: 10px 12px;
+    border: 1px solid #c30bdc;
+    border-radius: 6px;
+    background: #23245a;
+    color: #fff;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #8d0bd9;
+}
+
+.contact-container button[type="submit"] {
+    background: linear-gradient(90deg, #c30bdc 60%, #8d0bd9 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-container button[type="submit"]:hover {
+    background: linear-gradient(90deg, #8d0bd9 60%, #c30bdc 100%);
+}
+
+
+/* Contact CSS end */
+
+/* Footer CSS start */
+
+/* Footer Styles */
+.main-footer {
+    background: #181b3a;
+    color: #fff;
+    padding: 40px 0 0 0;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+    gap: 30px;
+}
+
+.footer-brand h3 {
+    color: #c30bdc;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links ul li a:hover {
+    color: #c30bdc;
+}
+
+.footer-social {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.footer-social a img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.2s, transform 0.2s;
+}
+
+.footer-social a:hover img {
+    filter: brightness(0) invert(0.6) sepia(1) hue-rotate(270deg) saturate(4);
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #aaa;
+    padding: 18px 0 10px 0;
+    font-size: 0.95rem;
+    border-top: 1px solid #2d2d4d;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    .footer-brand, .footer-links, .footer-social {
+        text-align: center;
+    }
+}
+
+/* Footer CSS end */
